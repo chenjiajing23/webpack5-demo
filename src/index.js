@@ -1,13 +1,16 @@
 import './style.css';
 import { getUserInfo } from './print';
+import lodash from "lodash";
 
+console.log()
 
 console.log(getUserInfo());
 
 function component() {
   const element = document.createElement('div');
 
-  element.innerHTML = "<span>我是你爸爸</span>";
+  element.innerHTML = lodash.join(['Hello', 'webpack'], ' ');
+  // element.innerHTML = "<span>我是你爸爸000000</span>";
   element.classList.add('hello');
 
   return element;

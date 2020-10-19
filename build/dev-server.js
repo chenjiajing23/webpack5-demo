@@ -40,9 +40,11 @@ const main = function () {
 
     console.log('> Starting dev server...')
     webpackDevMiddleware.waitUntilValid(() => {
+      console.log(`a nice day >>>>`)
+    })
+    app.listen(newPort, () => {
       console.log(`> Listening at ${config.dev.host}:${newPort} \n`)
     })
-    app.listen(newPort)
   })
 }
 
